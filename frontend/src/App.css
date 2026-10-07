@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  background: #f2f2f2;
+  color: #111;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #fff;
+  padding: 16px 32px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.search {
+  flex: 1;
+  min-width: 200px;
+}
+
+input,
+select {
+  font: inherit;
+  font-size: 14px;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+input:focus-visible,
+select:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 2px;
+}
+
+.search {
+  flex: 1;
+  min-width: 200px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card.for-sale {
+  border-color: #4cc16a;
+}
+
+.card.exhibition {
+  border-color: #5a9bf0;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.meta {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.btn {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+.btn.small {
+  align-self: flex-start;
+  margin-top: 12px;
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+.actions {
+  margin-top: 40px;
+}
+
+.form-wrap {
+  margin-top: 24px;
+}
+
+.form-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 480px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form .checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+}
+
+.form .btn {
+  align-self: flex-start;
+}
+
+.error {
+  margin: 0 0 16px;
+  color: #c0392b;
+  font-size: 14px;
+}
+
+.form .error {
+  margin: 0;
+}
+
+.empty {
+  color: #666;
+  font-size: 14px;
+}
+
+.footer {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.footer strong {
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+
+  .header,
+  .footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .main {
+    padding: 24px 16px 40px;
+  }
+}
